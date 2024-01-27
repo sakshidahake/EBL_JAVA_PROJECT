@@ -1,6 +1,5 @@
 package com.wecp.progressive.dao;
 
-<<<<<<< HEAD
 import com.wecp.progressive.config.DatabaseConnectionManager;
 import com.wecp.progressive.dto.CustomerAccountInfo;
 import com.wecp.progressive.entity.Customers;
@@ -16,20 +15,10 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 // @Repository
-=======
-import com.wecp.progressive.dto.CustomerAccountInfo;
-import com.wecp.progressive.entity.Customers;
-
-import java.util.ArrayList;
-import java.util.List;
-
-
->>>>>>> 4e22544bcc9b3dd20b60f27ef1f2b6cfef344e12
 public class CustomerDAOImpl implements CustomerDAO {
 
 
     @Override
-<<<<<<< HEAD
     public List<Customers> getAllCustomers() throws SQLException {
          List<Customers> customers = new ArrayList<>();
 
@@ -222,37 +211,3 @@ public class CustomerDAOImpl implements CustomerDAO {
     }
 
 }
-=======
-    public List<Customers> getAllCustomers() {
-        List<Customers> customers = new ArrayList<>();
-        return  customers;
-    }
-
-    @Override
-    public Customers getCustomerById(int customerId) {
-        return  null;
-    }
-
-    @Override
-    public int addCustomer(Customers customers) {
-        int generated_ID = -1;
-        return generated_ID;
-    }
-
-    @Override
-    public void updateCustomer(Customers customers) {
-
-    }
-
-    @Override
-    public void deleteCustomer(int customerId) {
-
-    }
-
-    @Override
-    public CustomerAccountInfo getCustomerAccountInfo(int customerId) {
-        return null;
-    }
-
-}
->>>>>>> 4e22544bcc9b3dd20b60f27ef1f2b6cfef344e12

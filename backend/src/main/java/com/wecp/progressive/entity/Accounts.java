@@ -42,14 +42,8 @@ public class Accounts implements Comparable<Accounts> {
     }
 
     @Override
-<<<<<<< HEAD
     public int compareTo(Accounts otherAccounts) {
         // Implement comparison logic based on account balance
         return Double.compare(this.getBalance(), otherAccounts.getBalance());
-=======
-    public int compareTo(Accounts accounts) {
-        
-        return Double.compare(this.getBalance(), accounts.getBalance());
->>>>>>> 4e22544bcc9b3dd20b60f27ef1f2b6cfef344e12
     }
 }

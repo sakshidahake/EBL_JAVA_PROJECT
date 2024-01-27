@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 package com.wecp.progressive.dao;
 
@@ -106,36 +105,10 @@ public class AccountDAOImpl implements AccountDAO {
                 connection.close();
             }
         }
-=======
-package com.wecp.progressive.dao;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import com.wecp.progressive.entity.Accounts;
-
-
-public class AccountDAOImpl implements AccountDAO{
-
-    @Override
-    public List<Accounts> getAllAccounts() {
-        return null;
-
-    }
-
-    public List<Accounts> getAllAccountsByCustomer(int customer_id) {
-        List<Accounts> accounts_al = new ArrayList<>();
-        return accounts_al;
-    }
-
-    @Override
-    public Accounts getAccountById(int accountId) {
->>>>>>> 4e22544bcc9b3dd20b60f27ef1f2b6cfef344e12
         return null;
     }
 
     @Override
-<<<<<<< HEAD
     public int addAccount(Accounts accounts) throws SQLException {
         int generatedID = -1;
         Connection connection = null;
@@ -164,16 +137,10 @@ public class AccountDAOImpl implements AccountDAO{
         }
         return generatedID;
 
-=======
-    public int addAccount(Accounts accounts) {
-        int generated_ID = -1;
-        return generated_ID;
->>>>>>> 4e22544bcc9b3dd20b60f27ef1f2b6cfef344e12
     }
 
 
     @Override
-<<<<<<< HEAD
     public void updateAccount(Accounts accounts) throws SQLException {
         Connection connection = null;
         PreparedStatement statement = null;
@@ -219,15 +186,3 @@ public class AccountDAOImpl implements AccountDAO{
 
 
 }
-=======
-    public void updateAccount(Accounts accounts)  {
-
-    }
-
-    @Override
-    public void deleteAccount(int accountId) {
-
-    }
-
-}
->>>>>>> 4e22544bcc9b3dd20b60f27ef1f2b6cfef344e12
