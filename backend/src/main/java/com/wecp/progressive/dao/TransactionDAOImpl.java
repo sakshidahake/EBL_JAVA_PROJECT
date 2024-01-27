@@ -1,11 +1,3 @@
-// package com.wecp.progressive.dao;
-
-
-// public class TransactionDAOImpl {
-
-
-
-// }
 package com.wecp.progressive.dao;
 
 import com.wecp.progressive.entity.Transactions;
@@ -28,8 +20,8 @@ public class TransactionDAOImpl implements TransactionDAO{
 
     @Override
     public int addTransaction(Transactions transaction) {
-        int generatedID = -1;
-        return generatedID;
+        int generated_ID = -1;
+        return generated_ID;
     }
 
     @Override

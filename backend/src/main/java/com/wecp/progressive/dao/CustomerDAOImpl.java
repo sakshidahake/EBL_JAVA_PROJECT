@@ -1,8 +1,3 @@
-// package com.wecp.progressive.dao;
-
-// public class CustomerDAOImpl {
-
-// }
 package com.wecp.progressive.dao;
 
 import com.wecp.progressive.dto.CustomerAccountInfo;
@@ -28,8 +23,8 @@ public class CustomerDAOImpl implements CustomerDAO {
 
     @Override
     public int addCustomer(Customers customers) {
-        int generatedID = -1;
-        return generatedID;
+        int generated_ID = -1;
+        return generated_ID;
     }
 
     @Override
