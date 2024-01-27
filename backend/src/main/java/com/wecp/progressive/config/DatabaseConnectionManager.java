@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+// package com.wecp.progressive.config;
+
+// public class DatabaseConnectionManager {
+
+// }
+>>>>>>> 4e22544bcc9b3dd20b60f27ef1f2b6cfef344e12
 package com.wecp.progressive.config;
  
 import java.sql.*;
@@ -28,4 +36,8 @@ public class DatabaseConnectionManager {
  
         return DriverManager.getConnection(url, user, password);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4e22544bcc9b3dd20b60f27ef1f2b6cfef344e12

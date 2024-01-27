@@ -72,8 +72,14 @@ public class Customers implements Comparable<Customers> {
     }
 
     @Override
+<<<<<<< HEAD
     public int compareTo(Customers otherCustomers) {
         // Implement comparison logic based on customer name
         return this.getName().compareTo(otherCustomers.getName());
+=======
+    public int compareTo(Customers customers) {
+        
+        return this.getName().compareTo(customers.getName());
+>>>>>>> 4e22544bcc9b3dd20b60f27ef1f2b6cfef344e12
     }
 }

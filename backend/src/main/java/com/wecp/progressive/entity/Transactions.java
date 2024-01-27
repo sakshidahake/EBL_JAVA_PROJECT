@@ -10,7 +10,11 @@ public class Transactions {
     private Date transactionDate;
 
     public Transactions() {
+<<<<<<< HEAD
         //
+=======
+        
+>>>>>>> 4e22544bcc9b3dd20b60f27ef1f2b6cfef344e12
     }
 
     public Transactions(int transactionId, int accountId, double amount, Date timestamp, String transactionType) {

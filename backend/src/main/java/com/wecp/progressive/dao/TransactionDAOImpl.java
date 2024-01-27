@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 //94% of storage used … If you run out, you won't have enough storage to create, edit, and upload files. Get 100 GB of storage for ₹130.00 ₹35.00/month for 3 months.
 package com.wecp.progressive.dao;
@@ -43,10 +44,25 @@ public class TransactionDAOImpl implements TransactionDAO{
             }
         }
 
+=======
+package com.wecp.progressive.dao;
+
+import com.wecp.progressive.entity.Transactions;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TransactionDAOImpl implements TransactionDAO{
+
+    @Override
+    public List<Transactions> getAllTransactions(){
+        List<Transactions> transactions = new ArrayList<>();
+>>>>>>> 4e22544bcc9b3dd20b60f27ef1f2b6cfef344e12
         return transactions;
     }
 
     @Override
+<<<<<<< HEAD
     public Transactions getTransactionById(int transactionId) throws SQLException {
         Connection connection = null;
         PreparedStatement statement = null;
@@ -74,10 +90,14 @@ public class TransactionDAOImpl implements TransactionDAO{
                 connection.close();
             }
         }
+=======
+    public Transactions getTransactionById(int transactionId) {
+>>>>>>> 4e22544bcc9b3dd20b60f27ef1f2b6cfef344e12
         return null;
     }
 
     @Override
+<<<<<<< HEAD
     public int addTransaction(Transactions transaction) throws SQLException {
         Connection connection = null;
         PreparedStatement statement = null;
@@ -160,3 +180,21 @@ public class TransactionDAOImpl implements TransactionDAO{
     }
 
 }
+=======
+    public int addTransaction(Transactions transaction) {
+        int generated_ID = -1;
+        return generated_ID;
+    }
+
+    @Override
+    public void updateTransaction(Transactions transaction) {
+
+    }
+
+    @Override
+    public void deleteTransaction(int transactionId) {
+
+    }
+
+}
+>>>>>>> 4e22544bcc9b3dd20b60f27ef1f2b6cfef344e12
