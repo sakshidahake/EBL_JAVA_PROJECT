@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 import { Transaction } from "../types/transaction";
 import { Observable, of } from "rxjs";
+=======
+
+import { environment } from "src/environments/environment";
+import { Transaction } from "../types/transaction";
+import { Observable } from "rxjs";
+>>>>>>> 308ec344dbf45bf6be03673fdf87aec43c811a8b
 import { Customer } from "../types/customer";
 import { Account } from "../types/account";
 
@@ -41,12 +48,20 @@ export class BankService {
   }
   /** get account by user */
   getAccountsByUser(userId:string|null): Observable<Account[]> {
+<<<<<<< HEAD
     return of([]);
+=======
+    
+>>>>>>> 308ec344dbf45bf6be03673fdf87aec43c811a8b
 
   }
 
   getTransactionByUser(userId: string|null): Observable<Transaction[]> {
+<<<<<<< HEAD
     return of([]);
+=======
+    
+>>>>>>> 308ec344dbf45bf6be03673fdf87aec43c811a8b
 
   }
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { map, Observable } from "rxjs";
@@ -27,4 +28,9 @@ export class AuthService {
 
   createUser(user: Customer): Observable<Customer> {
   }
+=======
+
+export class AuthService {
+  
+>>>>>>> 308ec344dbf45bf6be03673fdf87aec43c811a8b
 }
