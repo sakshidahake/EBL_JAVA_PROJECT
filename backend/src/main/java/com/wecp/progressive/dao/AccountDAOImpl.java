@@ -67,7 +67,7 @@ public class AccountDAOImpl implements AccountDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; // Rethrow the exception
+            throw e; 
         } finally {
             if (connection != null) {
                 connection.close();
@@ -97,9 +97,9 @@ public class AccountDAOImpl implements AccountDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; // Rethrow the exception
+            throw e; 
         } finally {
-            // Close resources in the reverse order of opening
+           
             if (connection != null) {
                 connection.close();
             }
@@ -118,8 +118,6 @@ public class AccountDAOImpl implements AccountDAO {
             String sql = "INSERT INTO accounts (customer_id, balance) VALUES (?, ?)";
             statement = connection.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
 
-            //Comment previous set field before entity associations
-            // statement.setInt(1, accounts.getCustomerId());
             statement.setDouble(2, accounts.getBalance());
             statement.executeUpdate();
 
@@ -130,7 +128,7 @@ public class AccountDAOImpl implements AccountDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; // Rethrow the exception
+            throw e;
         } finally {
             if (connection != null) {
                 connection.close();
@@ -151,14 +149,12 @@ public class AccountDAOImpl implements AccountDAO {
             String sql = "UPDATE accounts SET customer_id = ?, balance = ? WHERE account_id = ?";
             statement = connection.prepareStatement(sql);
 
-            //Comment previous set field before entity associations
-            // statement.setInt(1, accounts.getCustomerId());
             statement.setDouble(2, accounts.getBalance());
             statement.setInt(3, accounts.getAccountId());
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; // Rethrow the exception
+            throw e; 
         } finally {
             if (connection != null) {
                 connection.close();
@@ -179,7 +175,7 @@ public class AccountDAOImpl implements AccountDAO {
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; // Rethrow the exception
+            throw e; 
         } finally {
             if (connection != null) {
                 connection.close();

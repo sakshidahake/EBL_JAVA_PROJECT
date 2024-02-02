@@ -60,8 +60,7 @@ public class AccountServiceImpl implements AccountService {
     @Override
     public List<Accounts> getAllAccountsSortedByBalanceFromArrayList() {
         List<Accounts> sortedAccounts = accountsList;
-        sortedAccounts.sort(Comparator.comparingDouble(Accounts::getBalance)); // Sort by account balance
-        return sortedAccounts;
+        sortedAccounts.sort(Comparator.comparingDouble(Accounts::getBalance));  return sortedAccounts;
     }
  
     @Override
